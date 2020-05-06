@@ -17,17 +17,17 @@ class DataStack
 
 template<class T>
 T DataStack<T>::top() {
-
+	return m_stack.top();
 }
 
 template<class T>
 void DataStack<T>::pop() {
-
+	m_stack.pop();
 }
 
 template<class T>
 void DataStack<T>::push(const T &t) {
-
+	m_stack.push(t);
 }
 
 int main()
@@ -44,7 +44,7 @@ int main()
    std::cout << st.top() << std::endl;
    st.pop();
    st.pop();
-   //std::cout << st.top() << std::endl;
+   std::cout << st.top() << std::endl;
 
    return 0;
 }
